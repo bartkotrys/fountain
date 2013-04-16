@@ -85,6 +85,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
+    <%=link_to 'Registration', new_user_registration_path %>
+    <%=link_to 'Sing in', new_user_session_path%>
+    <h3><%=current_user.email%></h3>
+    <h3><%=user_signed_in?%></h3>
 
   </body>
 </html>
